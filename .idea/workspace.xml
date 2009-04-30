@@ -85,16 +85,16 @@
       <file leaf-file-name="copy.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/library/copy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="18" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+            <state line="2" column="4" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="patron.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="patron.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/library/patron.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="6" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
+            <state line="25" column="47" selection-start="543" selection-end="543" vertical-scroll-proportion="0.616836">
               <folding />
             </state>
           </provider>
@@ -109,10 +109,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="library_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="library_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/library_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="14" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.53120464">
+            <state line="31" column="0" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="patron_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/patron_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="45" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,7 +130,7 @@
       <file leaf-file-name="library.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/library/library.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
+            <state line="25" column="6" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,7 +139,16 @@
       <file leaf-file-name="borrow_receipt.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/library/borrow_receipt.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="26" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+            <state line="12" column="51" selection-start="223" selection-end="298" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="borrow_receipt_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/borrow_receipt_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="21" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -516,27 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/library/copy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/library/patron.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/library/borrow_receipt.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="26" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/library_module.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
@@ -544,16 +541,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/library/copy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/library/library.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
+        <state line="25" column="6" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/borrow_receipt_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="21" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/patron_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="45" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/library_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="14" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.53120464">
+        <state line="31" column="0" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/library/borrow_receipt.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="51" selection-start="223" selection-end="298" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/library/patron.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="47" selection-start="543" selection-end="543" vertical-scroll-proportion="0.616836">
           <folding />
         </state>
       </provider>

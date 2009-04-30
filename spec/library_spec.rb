@@ -16,7 +16,7 @@ module Library
     end
 
     it "should know how many copies of a book there are" do
-      @library.count_of(@book).should == 1  
+      @library.count_of(@book).should == 1
     end
 
     it "should know how many copies of other books there are" do
@@ -28,8 +28,8 @@ module Library
 
     it "should produce a borrow receipt when a patron checks out a book" do
       borrow_receipt = @library.checkout(@copy, @patron)
-      borrow_receipt.copy.should be @copy
-      borrow_receipt.patron.should be @patron
+      borrow_receipt.copy.should be(@copy)
+      borrow_receipt.patron.should be(@patron)
       borrow_receipt.due_date.should == (@today+14)
     end
 
@@ -39,13 +39,35 @@ module Library
     end
 
     it "should increment copy count when patron checks in book" do
-      @library.checkout(@copy,@patron)
+      @library.checkout(@copy, @patron)
       @library.checkin(@copy)
       @library.count_of(@book).should == 1
     end
 
     it "should not allow patron to check out book if he has other books that are delinquent" do
+      ppp = Book.new("PPP")
+      ppp_copy = Copy.new(ppp)
+      @library.add_copy( ppp_copy)
 
+      borrow_date = Date.new(2009, 4, 30)
+      delinquent_date = borrow_date + 20
+
+      @library.set_now(borrow_date)
+      @library.checkout(@copy, @patron)
+      @library.set_now(delinquent_date)
+      proc {@library.checkout(ppp_copy, @patron)}.should raise_error(DelinquentPatron)
+    end
+
+    it "should clear delinquency when delinquent book is checked in" do
+      borrow_date = Date.new(2009, 4, 30)
+      delinquent_date = borrow_date + 20
+
+      @library.set_now(borrow_date)
+      @library.checkout(@copy, @patron)
+
+      @library.set_now(delinquent_date)
+      @library.checkin(@copy)
+      @patron.has_borrow_due_before?(delinquent_date).should be(false)
     end
 
 
@@ -53,18 +75,18 @@ module Library
   end
 
   class TestLibrary < Library
-       def initialize
-         super
-         @now = Date.new(2009, 4, 30)
-       end
+    def initialize
+      super
+      @now = Date.new(2009, 4, 30)
+    end
 
-       def set_now(date)
-         @now = date
-       end
-       
-       def get_now
-        @now
-      end
+    def set_now(date)
+      @now = date
+    end
+
+    def get_now
+      @now
+    end
   end
 end
 
