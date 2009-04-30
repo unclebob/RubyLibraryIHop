@@ -1,0 +1,5 @@
+require 'library/library.rb'
+require 'library/patron.rb'
+require 'library/book.rb'
+require 'library/copy.rb'
+require 'library/borrow_receipt.rb'
