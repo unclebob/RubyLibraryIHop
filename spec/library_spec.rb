@@ -7,9 +7,12 @@ require 'library_module.rb'
 module Library
   describe Library do
     before do
+      DAO::BorrowReceiptsDAO.clear
       @library = TestLibrary.new
       @today = @library.get_now
-      @patron = Patron.new("Bob");
+      @patron_card_number = "314159"
+      @patron = Patron.new(@patron_card_number)
+      @library.add_patron(@patron)
       @book = Book.new("War and Peace")
       @copy = Copy.new(@book)
       @library.add_copy(@copy)
@@ -68,6 +71,11 @@ module Library
       @library.set_now(delinquent_date)
       @library.checkin(@copy)
       @patron.has_borrow_due_before?(delinquent_date).should be(false)
+    end
+
+    it "should should recognize a patron from the code on his library card" do
+      patron = @library.get_patron(@patron_card_number)
+      patron.should be(@patron)
     end
 
 

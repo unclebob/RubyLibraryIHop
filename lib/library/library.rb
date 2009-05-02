@@ -3,6 +3,7 @@ module Library
 
     def initialize
       @books = {}
+      @patrons = Patrons.new
     end
 
     def copy_count(copy)
@@ -39,6 +40,13 @@ module Library
       @books[book]
     end
 
+    def add_patron(patron)
+      @patrons.add(patron)
+    end
+
+    def get_patron(card_number)
+      @patrons[card_number]
+    end
     private
 
     def decrement_copy_count(copy)
